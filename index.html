@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <style>
+        .btn1 {
+            padding: 6px 15px
+        }
+    </style>
+</head>
+
+<body onload="changeorder()">
+
+    <div class="container" id="rw">
+        <br>
+        <div align="center"> <button class="btn btn-success" onclick="changeClass()" id="bt">LIGHT MODE</button> </div><br>
+
+        <table class="table table-dark table" id="myid">
+            <thead>
+                <tr>
+                    <th scope="col">DAY</th>
+                    <th scope="col">
+                        TIMETABLE
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="rw">
+                    <th scope="row">MONDAY</th>
+                    <td>
+                        <table class="table table-dark table" id="myid1">
+                            <thead>
+                                <tr>
+                                    <TH>TIMINGS</TH>
+                                    <th>COURSE</th>
+                                    <th>ROOM</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <TD>10.00-11:00</TD>
+                                    <td><a class="btn btn-outline-secondary">CS 309</a></td>
+                                    <td><a class="btn btn-outline-success">L12</a></td>
+                                </tr>
+                                <tr>
+                                    <TD>11:00-12:00</TD>
+                                    <td><a class="btn btn-outline-success">CS 305</a></td>
+                                    <td><a class="btn btn-outline-success">L12</a></td>
+                                </tr>
+
+                                <tr>
+                                    <TD>12:00-01:00</TD>
+                                    <td><a class="btn btn-outline-success">CS 307</a></td>
+                                    <td><a class="btn btn-outline-success">L12</a></td>
+                                </tr>
+                                <tr>
+                                    <TD>02:00-05:00</TD>
+                                    <td><a class="btn btn-outline-success">CS 353</a></td>
+                                    <td><a class="btn btn-outline-success">L12</a></td>
+                                </tr>
+
+                </tr>
+                </tbody>
+                </table>
+                </td>
+                </tr>
+                <tr class="rw">
+                    <th scope="row">TUESDAY</th>
+                    <td>
+                        <table class="table table-dark table" id="myid2">
+                            <thead>
+                                <tr>
+                                    <TH>TIMINGS</TH>
+                                    <th>COURSE</th>
+                                    <th>ROOM</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+
+                                <tr>
+                                    <TD>10:00-11:00</TD>
+                                    <td><a class="btn btn-outline-success">CS 309</a></td>
+                                    <td><a class="btn btn-outline-success">L12</a></td>
+                                </tr>
+                                <tr>
+                                    <TD>11:00-12:00</TD>
+                                    <td><a class="btn btn-outline-success">CS 307</a></td>
+                                    <td><a class="btn btn-outline-success">L12</a></td>
+                                </tr>
+                                <tr>
+                                    <TD>02:00-05:00</TD>
+                                    <td><a class="btn btn-outline-success">CS 355</a></td>
+                                    <td><a class="btn btn-outline-success">L12</a></td>
+                                </tr>
+
+                </tr>
+                </tbody>
+                </table>
+                </td>
+                </tr>
+                <tr class="rw">
+                    <th scope="row">WEDNESDAY</th>
+                    <td>
+                        <table class="table table-dark table" id="myid3">
+                            <thead>
+                                <tr>
+                                    <TH>TIMINGS</TH>
+                                    <th>COURSE</th>
+                                    <th>ROOM</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+
+                                <tr>
+                                    <TD>10.00-11:00</TD>
+                                    <td><a class="btn btn-outline-secondary">CS 309</a></td>
+                                    <td><a class="btn btn-outline-success">L12</a></td>
+                                </tr>
+                                <tr>
+                                    <TD>11:00-12:00</TD>
+                                    <td><a class="btn btn-outline-success">CS 305</a></td>
+                                    <td><a class="btn btn-outline-success">L12</a></td>
+
+                                </tr>
+
+                                <tr>
+                                    <TD>12:00-01:00</TD>
+                                    <td><a class="btn btn-outline-success">CS 303</a></td>
+                                    <td><a class="btn btn-outline-success">L12</a></td>
+                                </tr>
+                                <tr>
+                                    <TD>02:00-05:00</TD>
+                                    <td><a class="btn btn-outline-success">CS 357</a></td>
+                                    <td><a class="btn btn-outline-success">L12</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="rw">
+                    <th scope="row">THURSDAY</th>
+                    <td>
+                        <table class="table table-dark table" id="myid4">
+                            <thead>
+                                <tr>
+                                    <TH>TIMINGS</TH>
+                                    <th>COURSE</th>
+                                    <th>ROOM</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <TD>10:00-11:00</TD>
+                                    <td><a class="btn btn-outline-success">CS 305</a></td>
+                                    <td><a class="btn btn-outline-success">L12</a></td>
+                                </tr>
+                                <tr>
+                                    <TD>11:00-12:00</TD>
+                                    <td><a class="btn btn-outline-success">CS 303</a></td>
+                                    <td><a class="btn btn-outline-success">L12</a></td>
+                                </tr>
+                                <tr>
+                                    <TD>02:00-05:00</TD>
+                                    <td><a class="btn btn-outline-success">CS 359</a></td>
+                                    <td><a class="btn btn-outline-success">L12</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="rw">
+                    <th scope="row">FRIDAY</th>
+                    <td>
+                        <table class="table table-dark table" id="myid5">
+                            <thead>
+                                <tr>
+                                    <TH>TIMINGS</TH>
+                                    <th>COURSE</th>
+                                    <th>ROOM</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <TD>10:00-11:00</TD>
+                                    <td><a class="btn btn-outline-success">CS 303</a></td>
+                                    <td><a class="btn btn-outline-success">L12</a></td>
+                                </tr>
+                                <tr>
+                                    <TD>11:00-12:00</TD>
+                                    <td><a class="btn btn-outline-success">CS 307</a></td>
+                                    <td><a class="btn btn-outline-success">L12</a></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+<script type="text/javascript">
+    function changeClass() {
+
+
+        if (document.getElementById('myid').className === 'table table-dark table') {
+            document.getElementById('myid').className = "table table-light table";
+            document.getElementById('myid1').className = "table table-light table";
+            document.getElementById('myid2').className = "table table-light table";
+            document.getElementById('myid3').className = "table table-light table";
+            document.getElementById('myid4').className = "table table-light table";
+            document.getElementById('myid5').className = "table table-light table";
+            document.getElementById('bt').innerHTML = "DARK MODE";
+        } else {
+            document.getElementById('myid').className = "table table-dark table";
+            document.getElementById('myid1').className = "table table-dark table";
+            document.getElementById('myid2').className = "table table-dark table";
+            document.getElementById('myid3').className = "table table-dark table";
+            document.getElementById('myid4').className = "table table-dark table";
+            document.getElementById('myid5').className = "table table-dark table";
+            document.getElementById('bt').innerHTML = "LIGHT MODE";
+        }
+    }
+
+    function dayNo(y, m, d) {
+        return --m * 31 - (m > 1 ? (1054267675 >> m * 3 - 6 & 7) - (y & 3 || !(y % 25) && y & 15 ? 0 : 1) : 0) + d;
+    }
+
+    function changeorder() {
+        var table = document.getElementById('myid');
+        var x = table.rows;
+        var date = new Date();
+        var day = date.getDay();
+        if (day > 0 && day < 6) {
+            for (var i = 5; i >= day; i--) {
+                x[1].parentNode.insertBefore(x[5], x[1]);
+            }
+        }
+
+        var y = date.getFullYear();
+        var m = date.getMonth() + 1;
+        var d = date.getDate();
+        var fixed = 24;
+        var change = --m * 31 - (m > 1 ? (1054267675 >> m * 3 - 6 & 7) - (y & 3 || !(y % 25) && y & 15 ? 0 : 1) : 0) + d;
+        var diff = change - fixed;
+        diff = Math.ceil(diff / 7);
+
+        if (diff % 2 == 1) {
+            document.getElementById('myrow').style.display = "none";
+        }
+
+    }
+</script>
+
+
+</html>
